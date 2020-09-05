@@ -5,9 +5,9 @@ influxdb:
 #  mem_limit: 192m
 # Those ports don't need to be exposed to the local host, only
 # Telegraf/grafana are talking to it.
-#  ports:
+  ports:
 #    - "8083:8083"
-     - "8086:8086"
+    - "8086:8086"
 #    - "8090:8090"
   env_file:
     - 'env.influxdb'
